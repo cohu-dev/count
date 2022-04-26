@@ -1,5 +1,5 @@
 import NextHeadSeo from 'next-head-seo'
-import { serviceName } from '../../constants/service'
+import { serviceDesc, serviceName } from '../../constants/service'
 import { FrontURL } from '../../constants/urls'
 
 // types
@@ -18,7 +18,7 @@ export const SEO: React.FC<Props> = (props) => {
   const {
     path,
     title = '',
-    description = '',
+    description = serviceDesc,
     ogImagePath = '/favicons/android-chrome-192x192.png',
     ogImageOtherSite = false,
     noindex,
