@@ -6,7 +6,7 @@ import { ThemeProvider } from 'next-themes'
 function MyApp({ Component, pageProps }: AppProps) {
   usePageView()
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" enableSystem={true}>
       <SEO path="/" noTitleTemplate={true} />
       <Component {...pageProps} />
     </ThemeProvider>

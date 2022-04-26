@@ -1,11 +1,11 @@
-import CogLoading from '@/components/interface/Loading/CogLoading/CogLoading'
+import Counter from '@/components/function/Counter/Counter'
 import type { NextPage } from 'next'
 import Layout from '../components/interface/Layout/Layout'
 
 const Index: NextPage = () => {
   return (
     <Layout>
-      <CogLoading />
+      <Counter />
     </Layout>
   )
 }

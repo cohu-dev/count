@@ -12,24 +12,24 @@ export const socials: LinksType = [
     Icon: TwitterIcon,
     href: TwitterURL,
   },
-  {
-    label: 'instagram',
-    Icon: InstagramIcon,
-    href: '',
-  },
-  {
-    label: 'github',
-    Icon: GithubIcon,
-    href: '',
-  },
-  {
-    label: 'youtube',
-    Icon: YoutubeIcon,
-    href: '',
-  },
-  {
-    label: 'linked in',
-    Icon: LinkedinIcon,
-    href: '',
-  },
+  //   {
+  //     label: 'instagram',
+  //     Icon: InstagramIcon,
+  //     href: '',
+  //   },
+  //   {
+  //     label: 'github',
+  //     Icon: GithubIcon,
+  //     href: '',
+  //   },
+  //   {
+  //     label: 'youtube',
+  //     Icon: YoutubeIcon,
+  //     href: '',
+  //   },
+  //   {
+  //     label: 'linked in',
+  //     Icon: LinkedinIcon,
+  //     href: '',
+  //   },
 ]

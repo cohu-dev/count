@@ -19,7 +19,7 @@ export const SEO: React.FC<Props> = (props) => {
     path,
     title = '',
     description = '',
-    ogImagePath = '/ogp/summary.png',
+    ogImagePath = '/favicons/android-chrome-192x192.png',
     ogImageOtherSite = false,
     noindex,
     noTitleTemplate,
