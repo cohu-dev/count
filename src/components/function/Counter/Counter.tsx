@@ -19,7 +19,7 @@ const Counter = memo(() => {
   return (
     <>
       <textarea
-        className="text-md h-48 w-full rounded-md border-2 border-gray-600 p-4 md:h-96"
+        className="text-md my-2 h-48 w-full rounded-md border-2 border-gray-600 p-4 dark:bg-stone-700 md:h-96"
         value={input}
         onChange={(e) => inputHandler(e)}
       />
