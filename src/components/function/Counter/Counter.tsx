@@ -2,7 +2,10 @@ import { FC, memo, useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Button from '@/components/interface/Button/Button'
 import toast, { Toaster } from 'react-hot-toast'
-const notify = () => toast.success('URLをコピーしました')
+import LinkButton from '@/components/interface/LinkButton/LinkButton'
+import { serviceName } from '@/constants/service'
+import { FrontURL } from '@/constants/urls'
+const notify = () => toast.success('コピーしました')
 
 type PProps = {
   label: string
@@ -30,11 +33,19 @@ const Counter = memo(() => {
           input.match(/\r\n|\n/g) ? input.match(/\r\n|\n/g)!.length + 1 : 1
         }行`}
       />
-      <div className="mt-2 space-x-2 text-center">
+      <div className="mt-2 grid-cols-2 space-x-2 text-center">
         <CopyToClipboard text={input}>
           <Button label="コピー" role="normal" onClick={notify} />
         </CopyToClipboard>
         <Button label="リセット" role="error" onClick={() => setInput('')} />
+      </div>
+      <div className="my-6 text-center">
+        <LinkButton
+          label="Twitterでシェア"
+          role="info"
+          href={`https://twitter.com/intent/tweet?text=${serviceName}&url=${FrontURL}`}
+          newTab={true}
+        />
       </div>
       <Toaster />
     </>

@@ -1,20 +1,15 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import ArticleContainer from './ArticleContainer'
-
+import FacebookIcon from './FacebookIcon'
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Projects/ArticleContainer',
-  component: ArticleContainer,
+  title: 'Projects/Icon/Icon/FacebookIcon',
+  component: FacebookIcon,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} as ComponentMeta<typeof ArticleContainer>
+} as ComponentMeta<typeof FacebookIcon>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof ArticleContainer> = (args) => (
-  <ArticleContainer {...args} />
-)
+const Template: ComponentStory<typeof FacebookIcon> = (args) => <FacebookIcon />
 
-export const Info = Template.bind({})
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Info.args = {}
+export const Base = Template.bind({})

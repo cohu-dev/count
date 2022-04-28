@@ -9,6 +9,7 @@ import { HiMenu, HiX } from 'react-icons/hi'
 import { Disclosure } from '@headlessui/react'
 import LinkButton from '@/components/interface/LinkButton/LinkButton'
 import TwitterIcon from '@/components/interface/Icon/TwitterIcon/TwitterIcon'
+import { navLinks } from '@/constants/navLinks'
 
 type Props = {
   popLinks: LinksType
@@ -16,11 +17,23 @@ type Props = {
 
 const Navbar: React.FC<Props> = memo(({ popLinks }) => {
   return (
-    <Disclosure as="nav" className="bg-stone-300 dark:bg-stone-900">
+    <Disclosure as="nav" className="bg-stone-300 dark:bg-stone-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
+              <div className="flex items-center md:hidden">
+                {navLinks.length > 0 && (
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <HiX className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <HiMenu className="block h-6 w-6" aria-hidden="true" />
+                    )}
+                  </Disclosure.Button>
+                )}
+              </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <Logo />
                 <div className="hidden sm:ml-6 md:block">

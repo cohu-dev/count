@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import YoutubeIcon from './YoutubeIcon'
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Projects/Icon/YoutubeIcon',
+  title: 'Projects/Icon/Icon/YoutubeIcon',
   component: YoutubeIcon,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

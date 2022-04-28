@@ -1,7 +1,7 @@
 import { LinksType } from '@/types/link'
 import { Popover, Transition } from '@headlessui/react'
 import { FC, Fragment } from 'react'
-import { HiChevronDown } from 'react-icons/hi'
+import { HiChevronDown, HiX } from 'react-icons/hi'
 
 type Props = {
   label: string
@@ -47,7 +47,7 @@ const BasePopover: FC<Props> = ({ label, links, subDesc, subLabel }) => {
                         className="-m-3 flex items-center rounded-lg bg-stone-200 p-2 transition duration-150 ease-in-out hover:bg-stone-300 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 dark:bg-stone-600 hover:dark:bg-stone-500"
                       >
                         <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-blue-400 text-stone-800  dark:bg-blue-200  dark:text-stone-100 sm:h-12 sm:w-12">
-                          <link.Icon
+                          <HiX
                             aria-hidden="true"
                             className="h-8 w-8 text-stone-50 dark:text-stone-600"
                           />

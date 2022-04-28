@@ -1,16 +1,20 @@
 import React, { FC } from 'react'
-import Horizon from '../../Horizon/Horizon'
+import { HiLink } from 'react-icons/hi'
 type Props = {
   label: string
+  classNameText?: string
 }
-const H2: FC<Props> = ({ label }) => {
+const H2: FC<Props> = ({ label, classNameText }) => {
   return (
-    <>
-      <h2 className="my-3 text-2xl font-bold text-stone-800 dark:text-stone-100">
+    <a href={`#${classNameText}`} className="duration-300 hover:opacity-75">
+      <h2
+        id={classNameText}
+        className="inline-flex items-center text-xl font-semibold text-stone-800 underline underline-offset-4 dark:text-stone-100 md:text-2xl lg:text-3xl"
+      >
+        <HiLink className="mr-2" />
         {label}
       </h2>
-      <Horizon />
-    </>
+    </a>
   )
 }
 

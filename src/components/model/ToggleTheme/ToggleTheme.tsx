@@ -13,8 +13,8 @@ const ToggleTheme = () => {
   }
   return (
     <>
-      {theme === 'light' && <IconButton Icon={MoonIcon} onClick={onDark} />}
       {theme === 'dark' && <IconButton Icon={SunIcon} onClick={onLight} />}
+      {theme === 'light' && <IconButton Icon={MoonIcon} onClick={onDark} />}
     </>
   )
 }

@@ -10,3 +10,7 @@ html {
   --primary: rgb(46, 207, 202);
   --primarybg: #57c25d;
 }
+
+.a-text {
+  @apply text-blue-600 underline visited:text-purple-800 dark:text-blue-300 dark:visited:text-purple-300;
+}

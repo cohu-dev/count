@@ -1,12 +1,14 @@
+import PinterestIcon from '@/components/interface/Icon/PinterestIcon/PinterestIcon'
 import IconLinkButton from '@/components/interface/IconLinkButton/IconLinkButton'
-import React from 'react'
-import { RiPinterestFill } from 'react-icons/ri'
-
-const PinterestShare = () => {
+import React, { FC } from 'react'
+type Props = {
+  url: string
+}
+const PinterestShare: FC<Props> = ({ url }) => {
   return (
     <IconLinkButton
-      Icon={RiPinterestFill}
-      href={`https://social-plugins.line.me/lineit/share?url=`}
+      Icon={PinterestIcon}
+      href={`https://social-plugins.line.me/lineit/share?url=${url}`}
       noFollow={true}
       newTab={true}
     />

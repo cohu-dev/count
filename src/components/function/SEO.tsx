@@ -1,11 +1,12 @@
 import NextHeadSeo from 'next-head-seo'
+import { FC } from 'react'
 import { serviceDesc, serviceName } from '../../constants/service'
 import { FrontURL } from '../../constants/urls'
 
 // types
 export type Props = {
   path: string
-  title?: string
+  title: string
   description?: string
   ogImagePath?: string
   noindex?: boolean
@@ -14,12 +15,12 @@ export type Props = {
   ogImageOtherSite?: boolean
 }
 
-export const SEO: React.FC<Props> = (props) => {
+export const SEO: FC<Props> = (props) => {
   const {
     path,
-    title = '',
+    title,
     description = serviceDesc,
-    ogImagePath = '/favicons/android-chrome-192x192.png',
+    ogImagePath = '/ogp/summary.png',
     ogImageOtherSite = false,
     noindex,
     noTitleTemplate,
