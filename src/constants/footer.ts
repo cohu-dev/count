@@ -1,7 +1,7 @@
+import { LinksType } from '@/types/link'
 import {
   AboutPath,
   ChangelogPath,
-  ContactPath,
   DisclaimerPath,
   FaqsPath,
   LoadmapPath,
@@ -9,39 +9,38 @@ import {
   TermsPath,
 } from './paths'
 import { serviceName } from './service'
+import { ContactURL } from './urls'
 
-export const legals: { name: string; href: string }[] = [
+export const legals: LinksType = [
   {
-    name: 'プライバシーポリシー',
+    label: 'プライバシーポリシー',
     href: PrivacyPath,
   },
   {
-    name: '利用規約',
+    label: '利用規約',
     href: TermsPath,
   },
   {
-    name: '免責事項',
+    label: '免責事項',
     href: DisclaimerPath,
   },
 ]
-export const abouts: { name: string; href: string }[] = [
+export const abouts: LinksType = [
   {
-    name: `${serviceName}について`,
+    label: `${serviceName}について`,
     href: AboutPath,
   },
-  {
-    name: 'よくある質問',
-    href: FaqsPath,
-  },
-  {
-    name: 'チェンジログ',
-    href: ChangelogPath,
-  },
-  {
-    name: 'ロードマップ',
-    href: LoadmapPath,
-  },
+  //   {`
+  //     label: 'よくある質問',
+  //     href: FaqsPath,
+  //   },
+  //   {
+  //     label: 'チェンジログ',
+  //     href: ChangelogPath,
+  //   },
+  //   {
+  //     label: 'ロードマップ',
+  //     href: LoadmapPath,
+  //   },`
 ]
-export const contacts: { name: string; href: string }[] = [
-  { name: 'お問い合わせ', href: '' },
-]
+export const contacts: LinksType = [{ label: 'お問い合わせ', href: ContactURL }]
