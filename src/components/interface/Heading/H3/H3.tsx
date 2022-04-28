@@ -21,7 +21,7 @@ const H3: FC<Props> = ({ label, align = 'left' }) => {
     <h3
       className={`${textAlign(
         align
-      )} my-2 text-xl font-bold text-stone-800 dark:text-stone-100`}
+      )} mt-8 mb-2 text-lg font-semibold text-stone-800 underline underline-offset-4 dark:text-stone-100 md:text-xl`}
     >
       {label}
     </h3>

@@ -1,0 +1,17 @@
+import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import PinterestIcon from './PinterestIcon'
+// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+export default {
+  title: 'Projects/Icon/Icon/PinterestIcon',
+  component: PinterestIcon,
+  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  argTypes: {},
+} as ComponentMeta<typeof PinterestIcon>
+
+// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+const Template: ComponentStory<typeof PinterestIcon> = (args) => (
+  <PinterestIcon />
+)
+
+export const Base = Template.bind({})

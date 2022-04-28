@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import TwitterIcon from './TwitterIcon'
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Projects/Icon/TwitterIcon',
+  title: 'Projects/Icon/Icon/TwitterIcon',
   component: TwitterIcon,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

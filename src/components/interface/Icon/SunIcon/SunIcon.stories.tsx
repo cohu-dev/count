@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import SunIcon from './SunIcon'
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Projects/Icon/SunIcon',
+  title: 'Projects/Icon/Icon/SunIcon',
   component: SunIcon,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

@@ -5,7 +5,7 @@ import TwitterIcon from '../Icon/TwitterIcon/TwitterIcon'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Projects/IconLinkButton',
+  title: 'Projects/Icon/IconLinkButton',
   component: IconLinkButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

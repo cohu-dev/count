@@ -5,7 +5,7 @@ import { BreadcrumbsType } from '../types/breadcrumbs'
 import Breadcrumb from '../components/interface/Breadcrumbs/BreadCrumbs'
 import fs from 'fs'
 import { PrivacyPath } from '../constants/paths'
-import ArticleContainer from '@/components/interface/Layout/Container/ArticleContainer/ArticleContainer'
+import ArticleContainer from '@/components/interface/Container/ArticleContainer/ArticleContainer'
 
 const breads: BreadcrumbsType = [
   {

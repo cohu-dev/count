@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import CloseIcon from './CloseIcon'
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Projects/Icon/CloseIcon',
+  title: 'Projects/Icon/Icon/CloseIcon',
   component: CloseIcon,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

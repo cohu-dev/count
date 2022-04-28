@@ -5,9 +5,9 @@ type Props = {
 const H1: FC<Props> = ({ label }) => {
   return (
     <>
-      <h2 className="my-3 text-center text-3xl font-bold text-stone-800 dark:text-stone-100">
+      <h1 className="my-3 mx-auto table max-w-4xl text-left text-xl font-bold text-stone-800 dark:text-stone-100 md:my-6 md:text-3xl">
         {label}
-      </h2>
+      </h1>
     </>
   )
 }

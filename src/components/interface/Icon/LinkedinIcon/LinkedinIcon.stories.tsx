@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import LinkedinIcon from './LinkedinIcon'
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Projects/Icon/LinkedinIcon',
+  title: 'Projects/Icon/Icon/LinkedinIcon',
   component: LinkedinIcon,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

@@ -9,12 +9,12 @@ type Props = {
 }
 const Breadcrumb: React.FC<Props> = memo(({ breads }) => {
   return (
-    <div className="mx-2 my-4" aria-label="Breadcrumb">
+    <div className="mx-2 my-4 truncate" aria-label="Breadcrumb">
       <ol className="flex list-none flex-wrap items-center text-base ">
         <li>
           <Link href={HomePath} prefetch={false}>
             <a className="flex items-center justify-center hover:underline">
-              <HiOutlineHome className="mx-1 h-5 w-5" />
+              <HiOutlineHome className="mr-2 h-5 w-5" />
               ホーム
             </a>
           </Link>
