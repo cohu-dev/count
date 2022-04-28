@@ -10,7 +10,7 @@ const Index: NextPage = () => {
     <Layout>
       <SEO path="/" title="Notion文字数カウント" />
       <H1 label="Notionに埋め込める文字数カウンター" />
-      <div className="my-4 mx-auto grid grid-cols-2 text-center">
+      <div className="my-4 mx-auto grid grid-cols-1 gap-2 text-center md:grid-cols-2">
         <LinkButton label="埋め込みページはこちら" href="/embed" role="info" />
         <LinkButton
           label="デモはこちら"
