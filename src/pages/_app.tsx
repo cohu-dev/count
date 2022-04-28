@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   usePageView()
   return (
     <ThemeProvider attribute="class" enableSystem={true}>
-      <SEO path="/" noTitleTemplate={true} />
+      <SEO title="Notion文字数カウント" path="/" noTitleTemplate={true} />
       <Component {...pageProps} />
     </ThemeProvider>
   )
