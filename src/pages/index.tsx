@@ -6,6 +6,8 @@ import LinkButton from '@/components/interface/LinkButton/LinkButton'
 import type { GetStaticProps, NextPage } from 'next'
 import Layout from '../components/interface/Layout/Layout'
 import fs from 'fs'
+import { serviceName } from '@/constants/service'
+import { FrontURL } from '@/constants/urls'
 
 type Props = {
   markdown: string
@@ -16,6 +18,14 @@ const Index: NextPage<Props> = ({ markdown }) => {
     <Layout>
       <SEO path="/" title="Notion文字数カウント" />
       <H1 label="Notionに埋め込める文字数カウンター" />
+      <div className="my-6 text-center">
+        <LinkButton
+          label="Twitterでシェア"
+          role="warn"
+          href={`https://twitter.com/intent/tweet?text=${serviceName}&url=${FrontURL}`}
+          newTab={true}
+        />
+      </div>
       <div className="my-4 mx-auto grid grid-cols-1 gap-2 text-center md:grid-cols-2">
         <LinkButton label="埋め込みページはこちら" href="/embed" role="info" />
         <LinkButton
