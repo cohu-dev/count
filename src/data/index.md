@@ -1,6 +1,6 @@
 ## 関連ツール
 
-[Notion カウントダウンメーカー](https://count-down.cohu.dev/)
+リンク：[Notion カウントダウンメーカー](https://count-down.cohu.dev/)
 
 [![Notion カウントダウンメーカー](/index/2022-04-28-16-46-27.png)
 ](https://count-down.cohu.dev/)

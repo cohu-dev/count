@@ -18,15 +18,8 @@ const Index: NextPage<Props> = ({ markdown }) => {
     <Layout>
       <SEO path="/" title="Notion文字数カウント" />
       <H1 label="Notionに埋め込める文字数カウンター" />
-      <div className="my-6 text-center">
-        <LinkButton
-          label="Twitterでシェア"
-          role="warn"
-          href={`https://twitter.com/intent/tweet?text=${serviceName}&url=${FrontURL}`}
-          newTab={true}
-        />
-      </div>
-      <div className="my-4 mx-auto grid grid-cols-1 gap-2 text-center md:grid-cols-2">
+
+      <div className="my-4 mx-auto grid grid-cols-1 justify-center gap-2  md:grid-cols-2">
         <LinkButton label="埋め込みページはこちら" href="/embed" role="info" />
         <LinkButton
           label="使い方はこちら"
@@ -36,6 +29,14 @@ const Index: NextPage<Props> = ({ markdown }) => {
         />
       </div>
       <Counter />
+      <div className="my-12 mx-auto grid grid-cols-1">
+        <LinkButton
+          label=">> Twitterで共有 <<"
+          role="warn"
+          href={`https://twitter.com/intent/tweet?text=${serviceName}&url=${FrontURL}`}
+          newTab={true}
+        />
+      </div>
       <ArticleContainer markdown={markdown} />
     </Layout>
   )

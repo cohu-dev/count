@@ -3,8 +3,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Button from '@/components/interface/Button/Button'
 import toast, { Toaster } from 'react-hot-toast'
 import LinkButton from '@/components/interface/LinkButton/LinkButton'
-import { serviceName } from '@/constants/service'
-import { ContactURL, FrontURL } from '@/constants/urls'
+import { ContactURL } from '@/constants/urls'
 const notify = () => toast.success('コピーしました')
 
 type PProps = {
@@ -22,7 +21,7 @@ const Counter = memo(() => {
   return (
     <>
       <textarea
-        className="text-md my-2 h-48 w-full rounded-md border-2 border-gray-600 p-4 dark:bg-stone-700 md:h-96"
+        className="text-md xs:h-48 my-2 h-32 w-full rounded-md border-2 border-gray-600 p-4 dark:bg-stone-700 md:h-64 xl:h-96"
         value={input}
         onChange={(e) => inputHandler(e)}
       />
