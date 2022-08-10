@@ -8,7 +8,6 @@ import {
   PrivacyPath,
   TermsPath,
 } from './paths'
-import { serviceName } from './service'
 import { ContactURL } from './urls'
 
 export const legals: LinksType = [
@@ -26,10 +25,10 @@ export const legals: LinksType = [
   },
 ]
 export const abouts: LinksType = [
-  {
-    label: `${serviceName}について`,
-    href: AboutPath,
-  },
+  //   {
+  //     label: `${serviceName}について`,
+  //     href: AboutPath,
+  //   },
   //   {`
   //     label: 'よくある質問',
   //     href: FaqsPath,

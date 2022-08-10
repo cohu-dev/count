@@ -20,7 +20,7 @@ export const SEO: FC<Props> = (props) => {
     path,
     title,
     description = serviceDesc,
-    ogImagePath = '/ogp/summary.png',
+    ogImagePath = '/favicons/android-chrome-384x384.png',
     ogImageOtherSite = false,
     noindex,
     noTitleTemplate,

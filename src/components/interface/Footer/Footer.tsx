@@ -9,10 +9,6 @@ import Logo from '../Logo/Logo'
 
 const footerMenues: { label: string; menues: LinksType }[] = [
   {
-    label: 'Links',
-    menues: abouts,
-  },
-  {
     label: 'Contant',
     menues: contacts,
   },
