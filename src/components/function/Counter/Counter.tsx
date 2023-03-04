@@ -2,8 +2,6 @@ import { FC, memo, useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import Button from '@/components/interface/Button/Button'
 import toast, { Toaster } from 'react-hot-toast'
-import LinkButton from '@/components/interface/LinkButton/LinkButton'
-import { ContactURL } from '@/constants/urls'
 const notify = () => toast.success('コピーしました')
 
 type PProps = {
@@ -37,15 +35,6 @@ const Counter = memo(() => {
           <Button label="コピー" role="normal" onClick={notify} />
         </CopyToClipboard>
         <Button label="リセット" role="error" onClick={() => setInput('')} />
-      </div>
-      <div className="my-6 text-center">
-        <LinkButton
-          label="ご要望・感想はこちら"
-          role="info"
-          href={ContactURL}
-          //   href={`https://twitter.com/intent/tweet?text=${serviceName}&url=${FrontURL}`}
-          newTab={true}
-        />
       </div>
       <Toaster />
     </>

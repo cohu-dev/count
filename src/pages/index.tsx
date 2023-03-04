@@ -29,14 +29,6 @@ const Index: NextPage<Props> = ({ markdown }) => {
         />
       </div>
       <Counter />
-      <div className="my-12 mx-auto grid grid-cols-1">
-        <LinkButton
-          label=">> Twitterで共有 <<"
-          role="warn"
-          href={`https://twitter.com/intent/tweet?text=${serviceName}&url=${FrontURL}`}
-          newTab={true}
-        />
-      </div>
       <ArticleContainer markdown={markdown} />
     </Layout>
   )
